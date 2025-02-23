@@ -22,11 +22,14 @@ nano /etc/hostname && nano /etc/hosts
 # updating repos for debian 11+ or ubuntu 22.04 LTS / 24.04 LTS
 apt update
 
-# UBUNTU USERS ONLY AND THIS IS OPTIONAL
+# UBUNTU USERS ONLY AND THIS IS OPTIONAL (ACTIVATION IS ONLY FOR VPS and DS ONLY)
 # activation of Ubuntu Pro, and enabling the beta version Realtime Kernel 
 # (delete the --beta command if you want the normal RTK)
-# You can get Ubuntu Pro packages  (More secure programs and extensions) at https://ubuntu.com/pro
-pro attach C12qwtJpFvCgrFvWKGZ96rUZzNspLA && pro enable realtime-kernel --beta
+# You can get Ubuntu Pro packages Activation Token  
+# (More secure programs and extensions) at https://ubuntu.com/pro
+# PLEASE REPLACE <ActTok> with the token shown on the dashboard
+pro attach <ActTok> && clear && pro enable realtime-kernel --beta
+
 
 # FROM THIS POINT ON THE FOLLOWING IS AUTOMATED AND WILL REBOOT AUTOMATICALLY
 # PLEASE WAIT UP TO 5 MINUTES BEFORE ACCESSING SSH AGAIN
